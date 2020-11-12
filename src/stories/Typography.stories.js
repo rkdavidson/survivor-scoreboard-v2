@@ -8,10 +8,18 @@ export default {
 
 export const Headings = () => (
   <>
-    <Box as="h1">Heading 1</Box>
-    <Box as="h2">Heading 2</Box>
-    <Box as="h3">Heading 3</Box>
-    <Box as="h4">Heading 4</Box>
+    <Box as="h1" fontFamily="title" fontSize="h1" textTransform="uppercase">
+      Heading 1: Survivor Scoreboard
+    </Box>
+    <Box as="h2" fontFamily="title" fontSize="h2" textTransform="uppercase">
+      Heading 2: Survivor Scoreboard
+    </Box>
+    <Box as="h3" fontFamily="title" fontSize="h3" textTransform="uppercase">
+      Heading 3: Survivor Scoreboard
+    </Box>
+    <Box as="h4" fontFamily="title" fontSize="h4" textTransform="uppercase">
+      Heading 4: Survivor Scoreboard
+    </Box>
   </>
 )
 
