@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box } from '../styled'
+import { Box } from 'src/styled'
 
 export default {
   title: 'Box',

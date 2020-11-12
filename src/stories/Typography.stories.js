@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box } from '../styled'
+import { Box, H1, H2, H3, H4 } from '../styled'
 
 export default {
   title: 'Typography',
@@ -8,18 +8,10 @@ export default {
 
 export const Headings = () => (
   <>
-    <Box as="h1" fontFamily="title" fontSize="h1" textTransform="uppercase">
-      Heading 1: Survivor Scoreboard
-    </Box>
-    <Box as="h2" fontFamily="title" fontSize="h2" textTransform="uppercase">
-      Heading 2: Survivor Scoreboard
-    </Box>
-    <Box as="h3" fontFamily="title" fontSize="h3" textTransform="uppercase">
-      Heading 3: Survivor Scoreboard
-    </Box>
-    <Box as="h4" fontFamily="title" fontSize="h4" textTransform="uppercase">
-      Heading 4: Survivor Scoreboard
-    </Box>
+    <H1>Heading 1: Survivor Scoreboard</H1>
+    <H2>Heading 2: Survivor Scoreboard</H2>
+    <H3>Heading 3: Survivor Scoreboard</H3>
+    <H4>Heading 4: Survivor Scoreboard</H4>
   </>
 )
 

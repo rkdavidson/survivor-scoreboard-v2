@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 
-import theme from '../config/theme'
+import theme from 'src/config/theme'
 
 // The <ProviderComposer> component is used to avoid the annoyance of
 // having an endless nesting of Provider components wrapping the root-level
