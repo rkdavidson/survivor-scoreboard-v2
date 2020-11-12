@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import "src/css/global.css"
-
 const Container = styled.div`
   margin: 3rem auto;
   max-width: 600px;
@@ -14,6 +12,6 @@ const Container = styled.div`
   background: blue;
 `
 
-export default function Home() {
-  return <Container>Hello world!</Container>
+export default function Layout({ children }) {
+  return <Container>{children}</Container>
 }
