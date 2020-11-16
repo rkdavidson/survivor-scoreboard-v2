@@ -1,0 +1,353 @@
+{
+  "id": "australia-2016",
+  "details": {
+    "country": "Australia",
+    "displayDate": "2016"
+  },
+  "tribes": [
+    {
+      "id": "Saanapu",
+      "color": "blue",
+      "members": [
+        "flick",
+        "brooke",
+        "nick",
+        "matt",
+        "kylie"
+      ]
+    },
+    {
+      "id": "Vavau",
+      "color": "yellow",
+      "members": [
+        "kate",
+        "craig",
+        "andrew",
+        "conner",
+        "sam",
+        "sue",
+        "jennah-louise"
+      ]
+    },
+    {
+      "id": "Aganoa",
+      "color": "red",
+      "members": [
+        "phoebe",
+        "lee",
+        "kristie",
+        "kat",
+        "rohan",
+        "el"
+      ]
+    }
+  ],
+  "cast": [
+    {
+      "id": "andrew",
+      "name": "Andrew",
+      "age": "29",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "barry",
+      "name": "Barry",
+      "age": "44",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "bianca",
+      "name": "Bianca",
+      "age": "36",
+      "hometown": "Victoria",
+      "status": {
+        "hasFire": false,
+        "points": 2
+      }
+    },
+    {
+      "id": "brooke",
+      "name": "Brooke",
+      "age": "23",
+      "hometown": "Victoria",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "conner",
+      "name": "Conner",
+      "age": "23",
+      "hometown": "Australian Capitol Territory",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "craig",
+      "name": "Craig",
+      "age": "32",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "des",
+      "name": "Des",
+      "age": "59",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": false,
+        "points": 1
+      }
+    },
+    {
+      "id": "el",
+      "name": "El",
+      "age": "33",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "evan",
+      "name": "Evan",
+      "age": "30",
+      "hometown": "Victoria",
+      "status": {
+        "hasFire": false,
+        "points": 3
+      }
+    },
+    {
+      "id": "flick",
+      "name": "Flick",
+      "age": "23",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "jennah-louise",
+      "name": "Jennah-Louise",
+      "age": "27",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "kate",
+      "name": "Kate",
+      "age": "28",
+      "hometown": "Western Australia",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "kat",
+      "name": "Kat",
+      "age": "26",
+      "hometown": "Western Australia",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "kristie",
+      "name": "Kristie",
+      "age": "24",
+      "hometown": "New South Wales",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "kylie",
+      "name": "Kylie",
+      "age": "38",
+      "hometown": "Victoria",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "lee",
+      "name": "Lee",
+      "age": "40",
+      "hometown": "Queensland",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "matt",
+      "name": "Matt",
+      "age": "29",
+      "hometown": "South Australia",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "nick",
+      "name": "Nick",
+      "age": "28",
+      "hometown": "South Australia",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "peter",
+      "name": "Peter",
+      "age": "62",
+      "hometown": "Australian Capitol Territory",
+      "status": {
+        "hasFire": false,
+        "points": 4
+      }
+    },
+    {
+      "id": "phoebe",
+      "name": "Phoebe",
+      "age": "27",
+      "hometown": "New South Wales",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "rohan",
+      "name": "Rohan",
+      "age": "28",
+      "hometown": "Victoria",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "sam",
+      "name": "Sam",
+      "age": "28",
+      "hometown": "New South Wales",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "sue",
+      "name": "Sue",
+      "age": "59",
+      "hometown": "Western Australia",
+      "status": {
+        "hasFire": true,
+        "points": 0
+      }
+    },
+    {
+      "id": "tegan",
+      "name": "Tegan",
+      "age": "33",
+      "hometown": "New South Wales",
+      "status": {
+        "hasFire": false,
+        "points": 6
+      }
+    }
+  ],
+  "games": [
+    {
+      "id": "home",
+      "teams": [
+        {
+          "id": "carolyn",
+          "name": "Carolyn",
+          "points": 2,
+          "members": [
+            "bianca",
+            "craig",
+            "el",
+            "jennah-louise",
+            "kristie"
+          ]
+        },
+        {
+          "id": "ryan",
+          "name": "Ryan",
+          "points": 5,
+          "members": [
+            "nick",
+            "sue",
+            "barry",
+            "matt",
+            "rohan"
+          ]
+        },
+        {
+          "id": "keith",
+          "name": "Keith",
+          "points": 9,
+          "members": [
+            "kylie",
+            "sam",
+            "evan",
+            "andrew",
+            "tegan"
+          ]
+        },
+        {
+          "id": "gina",
+          "name": "Gina",
+          "points": 0,
+          "members": [
+            "phoebe",
+            "lee",
+            "kate",
+            "flick",
+            "brooke"
+          ]
+        },
+        {
+          "id": "bench",
+          "name": "The Bench",
+          "points": 5,
+          "members": [
+            "des",
+            "peter",
+            "conner",
+            "kat"
+          ]
+        }
+      ]
+    }
+  ]
+}

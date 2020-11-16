@@ -1,0 +1,50 @@
+{
+  "generalConfiguration.sortOnBeforeSave": true,
+  "importStringConfiguration": {
+    "trailingComma": "es5",
+    "tabSize": 2,
+    "maximumNumberOfImportExpressionsPerLine": {
+      "count": 100,
+      "type": "newLineEachExpressionAfterCountLimit"
+    },
+    "quoteMark": "single"
+  },
+  "importSorter.sortConfiguration.removeUnusedImports": true,
+  "sortConfiguration": {
+    "customOrderingRules": {
+      "defaultNumberOfEmptyLinesAfterGroup": 1,
+      "rules": [
+        {
+          "type": "importMember",
+          "regex": "^$",
+          "orderLevel": 10,
+          "disableSort": true
+        },
+        {
+          "regex": "^(config)(/.*)?$",
+          "orderLevel": 40
+        },
+        {
+          "regex": "^(providers)(/.*)?$",
+          "orderLevel": 41
+        },
+        {
+          "regex": "^(components)(/.*)?$",
+          "orderLevel": 42
+        },
+        {
+          "regex": "^(styled)(/.*)?$",
+          "orderLevel": 43
+        },
+        {
+          "regex": "^(declarations|images)(/.*)?$",
+          "orderLevel": 44
+        },
+        {
+          "regex": "^[.]",
+          "orderLevel": 45
+        }
+      ]
+    }
+  }
+}

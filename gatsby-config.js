@@ -1,10 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    siteUrl: 'https://differential.com',
+    title: 'Differential',
+    description: 'A digital-product agency',
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-root-import',
+    'gatsby-plugin-styled-components',
+  ],
 }
