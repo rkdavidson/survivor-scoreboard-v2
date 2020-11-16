@@ -43,8 +43,8 @@ export default function GameLeaderboard(props) {
     <Box as="main">
       <Box as="h1">GameLeaderboard</Box>
       <Box>
-        {teamsSorted.map(team => (
-          <TeamLeaderboardRow key={team.id} team={team} />
+        {teamsSorted.map((team, index) => (
+          <TeamLeaderboardRow key={team.id} rank={index + 1} team={team} />
         ))}
       </Box>
       <pre style={{ fontSize: '14px' }}>{JSON.stringify(data, null, 2)}</pre>

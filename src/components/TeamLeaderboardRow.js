@@ -40,7 +40,7 @@ export default function TeamLeaderboardRow(props) {
   return (
     <Box>
       <Box as="h4" fontWeight="bold">
-        Team: {props.team.name} — {props.team.points}
+        {`${props.rank}.)`} {props.team.name} — {props.team.points} pts
       </Box>
       <Box as="ul" pl="l" mb="base" fontSize="base">
         {sortedMembers.map(member => (
