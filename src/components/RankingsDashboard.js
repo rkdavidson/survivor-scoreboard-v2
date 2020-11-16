@@ -4,20 +4,28 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Box } from 'src/styled'
 
 export default function RankingsDashboard(props) {
+  // const data = {}
   const data = useStaticQuery(graphql`
     query RankingsDashboard {
-      allSeasons {
-        nodes {
-          id
-          cast {
-            age
-            hometown
+      season {
+        id
+        details {
+          country
+          displayDate
+        }
+        game(id: "home") {
+          teams {
             id
             name
-          }
-          tribes {
-            id
-            members
+            points
+            members {
+              id
+              name
+              status {
+                hasFire
+                points
+              }
+            }
           }
         }
       }
