@@ -96,6 +96,25 @@ exports.createSchemaCustomization = ({ actions }) => {
     },
   })
 
+  createFieldExtension({
+    name: 'teamsSorted',
+    extend(options, prevFieldConfig) {
+      return {
+        resolve(source, args, context) {
+          return context.nodeModel.runQuery({
+            query: {
+              sort: {
+                fields: args.sort.fields,
+                order: [args.sort.order],
+              },
+            },
+            type: 'SeasonGamesTeams',
+          })
+        },
+      }
+    },
+  })
+
   createTypes(`
     type Season implements Node {
       game(id: ID!): SeasonGames @gameById

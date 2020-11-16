@@ -3,10 +3,12 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { Box } from 'src/styled'
 
-export default function RankingsDashboard(props) {
+import TeamLeaderboardRow from './TeamLeaderboardRow'
+
+export default function GameLeaderboard(props) {
   // const data = {}
   const data = useStaticQuery(graphql`
-    query RankingsDashboard {
+    query GameLeaderboard {
       season {
         id
         details {
@@ -32,11 +34,16 @@ export default function RankingsDashboard(props) {
     }
   `)
 
-  console.log('[rkd] data:', data)
+  console.log('[rkd] GameLeaderboard data:', data)
 
   return (
     <Box as="main">
-      <Box as="h1">RankingsDashboard</Box>
+      <Box as="h1">GameLeaderboard</Box>
+      <Box>
+        {data.season.game.teams.map(team => (
+          <TeamLeaderboardRow key={team.id} team={team} />
+        ))}
+      </Box>
       <pre style={{ fontSize: '14px' }}>{JSON.stringify(data, null, 2)}</pre>
     </Box>
   )
