@@ -5,6 +5,8 @@ import { Box } from 'src/styled'
 
 import TeamLeaderboardRow from './TeamLeaderboardRow'
 
+const sortByHighestPoints = (a, b) => b.points - a.points
+
 export default function GameLeaderboard(props) {
   // const data = {}
   const data = useStaticQuery(graphql`
@@ -34,13 +36,14 @@ export default function GameLeaderboard(props) {
     }
   `)
 
-  console.log('[rkd] GameLeaderboard data:', data)
+  const teamsSorted = data.season.game.teams.sort(sortByHighestPoints)
+  console.log('[rkd] GameLeaderboard teamsSorted:', teamsSorted)
 
   return (
     <Box as="main">
       <Box as="h1">GameLeaderboard</Box>
       <Box>
-        {data.season.game.teams.map(team => (
+        {teamsSorted.map(team => (
           <TeamLeaderboardRow key={team.id} team={team} />
         ))}
       </Box>
