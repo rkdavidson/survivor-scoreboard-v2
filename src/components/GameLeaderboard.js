@@ -47,7 +47,6 @@ export default function GameLeaderboard(props) {
           <TeamLeaderboardRow key={team.id} rank={index + 1} team={team} />
         ))}
       </Box>
-      <pre style={{ fontSize: '14px' }}>{JSON.stringify(data, null, 2)}</pre>
     </Box>
   )
 }
