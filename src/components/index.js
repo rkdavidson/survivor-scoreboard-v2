@@ -1,2 +1,2 @@
 export { default as App } from './App'
-export { default as RankingsDashboard } from './RankingsDashboard'
+export { default as GameLeaderboard } from './GameLeaderboard'
