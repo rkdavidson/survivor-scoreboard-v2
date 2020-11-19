@@ -8,7 +8,6 @@ import TeamLeaderboardRow from './TeamLeaderboardRow'
 const sortByHighestPoints = (a, b) => b.points - a.points
 
 export default function GameLeaderboard(props) {
-  // const data = {}
   const data = useStaticQuery(graphql`
     query GameLeaderboard {
       season {
@@ -42,6 +41,8 @@ export default function GameLeaderboard(props) {
   return (
     <Box as="main">
       <Box as="h1">GameLeaderboard</Box>
+      <p>Country: {data.season.details.country}</p>
+      <p>Air Date: {data.season.details.displayDate}</p>
       <Box>
         {teamsSorted.map((team, index) => (
           <TeamLeaderboardRow key={team.id} rank={index + 1} team={team} />
