@@ -7,8 +7,6 @@ import { Box } from 'src/styled'
 export default function Home({ data }) {
   return (
     <App>
-      <Box as="h1">Home</Box>
-      <Box as="p">And how about some placeholder text?</Box>
       <GameLeaderboard />
     </App>
   )

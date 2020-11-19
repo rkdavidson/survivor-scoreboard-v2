@@ -5,6 +5,7 @@ import orderBy from 'lodash/orderBy'
 import { Box } from 'src/styled'
 
 import { CastMember } from 'src/propTypes'
+import { Card } from 'src/components/ui-kit'
 
 // const orderByHasFire = (a, b) => {
 //   // return a.status.hasFire && b.status.hasFire
@@ -38,16 +39,16 @@ export default function TeamLeaderboardRow(props) {
   )
 
   return (
-    <Box>
+    <Card mb="base">
       <Box as="h4" fontWeight="bold">
         {`${props.rank}.)`} {props.team.name} — {props.team.points} pts
       </Box>
-      <Box as="ul" pl="l" mb="base" fontSize="base">
+      <Box as="ul" pl="l" fontSize="base">
         {sortedMembers.map(member => (
           <TeamMemberListItem key={member.id} member={member} />
         ))}
       </Box>
-    </Box>
+    </Card>
   )
 }
 
