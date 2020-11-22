@@ -5,7 +5,13 @@ import { Box } from 'src/styled'
 
 const Card = props => {
   return (
-    <Box bg="neutrals.700" borderRadius="base" p="base" {...props}>
+    <Box
+      bg="neutrals.800"
+      borderRadius="base"
+      p="base"
+      boxShadow="base"
+      {...props}
+    >
       {props.children}
     </Box>
   )

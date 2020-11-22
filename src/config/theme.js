@@ -39,9 +39,9 @@ const theme = {
   },
   fontSizes: {
     base: rem('24px'),
-    xxs: rem('10px'),
-    xs: rem('12px'),
-    s: rem('14px'),
+    xxs: rem('12px'),
+    xs: rem('14px'),
+    s: rem('16px'),
     l: rem('24px'),
     xl: rem('24px'),
     hero: rem('70px'),
@@ -59,6 +59,7 @@ const theme = {
   lineHeights: {
     base: '1.5',
     heading: '1.2',
+    tight: '1',
   },
   radii: {
     base: rem('6px'),

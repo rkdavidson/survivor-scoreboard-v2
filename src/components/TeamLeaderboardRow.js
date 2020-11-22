@@ -1,33 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import orderBy from 'lodash/orderBy'
-
 import { Box } from 'src/styled'
 
 import { CastMember } from 'src/propTypes'
 import { Card } from 'src/components/ui-kit'
 
-// const orderByHasFire = (a, b) => {
-//   // return a.status.hasFire && b.status.hasFire
-//   if (a.status.hasFire === b.status.hasFire) return 0
-//   if (a.status.hasFire && !b.status.hasFire) return -1
-//   if (!a.status.hasFire && b.status.hasFire) {
-//     if (a.status)
-//   }
-// }
-
-const TeamMemberListItem = props => {
-  const {
-    name,
-    status: { hasFire, points },
-  } = props.member
-
-  return (
-    <li>
-      {name} {hasFire ? '🔥' : `💨 ${points} pts`}
-    </li>
-  )
-}
+import TeamPlayerTile from './TeamPlayerTile'
 
 export default function TeamLeaderboardRow(props) {
   console.log('[rkd] TeamLeaderboardRow props:', props)
@@ -39,13 +18,28 @@ export default function TeamLeaderboardRow(props) {
   )
 
   return (
-    <Card mb="base">
-      <Box as="h4" fontWeight="bold">
-        {`${props.rank}.)`} {props.team.name} — {props.team.points} pts
+    <Card mb="l">
+      <Box display="flex" flexDirection="row" justifyContent="space-between">
+        <Box
+          as="h3"
+          fontSize="h2"
+          fontFamily="heading"
+          fontWeight="bold"
+          mb="l"
+        >
+          {`${props.rank}.)`} {props.team.name} {props.rank === 1 ? '🏆' : ''}
+        </Box>
+        <Box as="h3" fontSize="h2" fontFamily="title">
+          {props.team.points} pts
+        </Box>
       </Box>
-      <Box as="ul" pl="l" fontSize="base">
+      <Box
+        display="grid"
+        gridTemplateColumns={{ _: '1fr', md: 'repeat(5, 1fr)' }}
+        gridColumnGap="base"
+      >
         {sortedMembers.map(member => (
-          <TeamMemberListItem key={member.id} member={member} />
+          <TeamPlayerTile key={member.id} player={member} />
         ))}
       </Box>
     </Card>
