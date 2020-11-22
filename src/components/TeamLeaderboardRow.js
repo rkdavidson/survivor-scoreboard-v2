@@ -7,15 +7,6 @@ import { Box } from 'src/styled'
 import { CastMember } from 'src/propTypes'
 import { Card } from 'src/components/ui-kit'
 
-// const orderByHasFire = (a, b) => {
-//   // return a.status.hasFire && b.status.hasFire
-//   if (a.status.hasFire === b.status.hasFire) return 0
-//   if (a.status.hasFire && !b.status.hasFire) return -1
-//   if (!a.status.hasFire && b.status.hasFire) {
-//     if (a.status)
-//   }
-// }
-
 const TeamMemberListItem = props => {
   const {
     name,
@@ -23,9 +14,9 @@ const TeamMemberListItem = props => {
   } = props.member
 
   return (
-    <li>
+    <Box as="li" color={hasFire ? 'white' : 'gray'}>
       {name} {hasFire ? '🔥' : `💨 ${points} pts`}
-    </li>
+    </Box>
   )
 }
 
@@ -40,7 +31,7 @@ export default function TeamLeaderboardRow(props) {
 
   return (
     <Card mb="base">
-      <Box as="h4" fontWeight="bold">
+      <Box as="h3" fontWeight="bold">
         {`${props.rank}.)`} {props.team.name} — {props.team.points} pts
       </Box>
       <Box as="ul" pl="l" fontSize="base">

@@ -49,8 +49,8 @@
       "age": "29",
       "hometown": "Queensland",
       "status": {
-        "hasFire": true,
-        "points": 0
+        "hasFire": false,
+        "points": 9
       }
     },
     {
@@ -59,8 +59,8 @@
       "age": "44",
       "hometown": "Queensland",
       "status": {
-        "hasFire": true,
-        "points": 0
+        "hasFire": false,
+        "points": 5
       }
     },
     {
@@ -159,8 +159,8 @@
       "age": "28",
       "hometown": "Western Australia",
       "status": {
-        "hasFire": true,
-        "points": 0
+        "hasFire": false,
+        "points": 8
       }
     },
     {
@@ -249,8 +249,8 @@
       "age": "28",
       "hometown": "Victoria",
       "status": {
-        "hasFire": true,
-        "points": 0
+        "hasFire": false,
+        "points": 7
       }
     },
     {
@@ -303,7 +303,7 @@
         {
           "id": "ryan",
           "name": "Ryan",
-          "points": 5,
+          "points": 12,
           "members": [
             "nick",
             "sue",
@@ -315,7 +315,7 @@
         {
           "id": "keith",
           "name": "Keith",
-          "points": 9,
+          "points": 18,
           "members": [
             "kylie",
             "sam",
@@ -339,7 +339,7 @@
         {
           "id": "bench",
           "name": "The Bench",
-          "points": 5,
+          "points": 13,
           "members": [
             "des",
             "peter",
