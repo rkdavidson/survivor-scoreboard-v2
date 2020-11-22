@@ -99,8 +99,8 @@
       "age": "32",
       "hometown": "Queensland",
       "status": {
-        "hasFire": true,
-        "points": 0
+        "hasFire": false,
+        "points": 10
       }
     },
     {
@@ -145,7 +145,7 @@
     },
     {
       "id": "jennah-louise",
-      "name": "Jennah-Louise",
+      "name": "Jennah Louise",
       "age": "27",
       "hometown": "Queensland",
       "status": {
@@ -159,8 +159,8 @@
       "age": "28",
       "hometown": "Western Australia",
       "status": {
-        "hasFire": false,
-        "points": 8
+        "hasFire": true,
+        "points": 0
       }
     },
     {
@@ -169,8 +169,8 @@
       "age": "26",
       "hometown": "Western Australia",
       "status": {
-        "hasFire": true,
-        "points": 0
+        "hasFire": false,
+        "points": 8
       }
     },
     {
@@ -291,7 +291,7 @@
         {
           "id": "carolyn",
           "name": "Carolyn",
-          "points": 2,
+          "points": 12,
           "members": [
             "bianca",
             "craig",
